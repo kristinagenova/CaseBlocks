@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>CaseBlocks</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="test.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body onload="loadGlobalVariablesReferencingDOMObjects">
+	<header>
+		<h3 class="text"> Simple CaseBlocks App</h3>
+	</header>
+	<div id="form">
+		<h4 class="text">What is your client reference?</h4>
+		<input id="userRef" type="text" size="30"> <br><br>
+		<button id="button" onclick="executeGet(document.getElementById('userRef').value);"> submit </button>
+	</div>
+	<div id="container" class="hidden">
+		<h3 id="tableHeader"></h3>
+		<table id="table">
+			<tr>
+				<th>
+					Created at
+				</th>
+				<th>
+					Enquery type
+				</th>
+				<th>
+					Message
+				</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
